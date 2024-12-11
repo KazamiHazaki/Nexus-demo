@@ -1,0 +1,11 @@
+services:
+  nexus-demo:
+    image: samuraixheart/nexus-demo
+    environment:
+      - PROVER_ID=your-prover here
+    deploy:
+      resources:
+        limits:
+          cpus: '1' 
+          memory: 2G   
+    container_name: nexus-testnet
